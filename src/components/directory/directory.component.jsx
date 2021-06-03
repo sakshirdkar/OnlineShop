@@ -1,0 +1,54 @@
+import React from 'react';
+
+import MenuItem from '../menu-item/menu-item.component';
+import './directory.style.scss'
+class Directory extends React.Component{
+    
+    constructor() {
+        super();
+        this.state = {
+            sections :[{
+                title: 'VEGETABLES',
+                imageUrl: 'https://hdwallpapers.cat/wallpaper/vegetables-photography-tomatoes-abstract-hd-90V6.jpg',
+                id: 1,
+                size:""
+            
+            }, {
+                title: 'FRUITS',
+                imageUrl: 'https://st3.depositphotos.com/14670260/36011/i/1600/depositphotos_360110138-stock-photo-tropical-fruits-background-many-colorful.jpg',
+                id: 2,
+                size:''
+            }, {
+                title: 'DAIRY PRODUCTS',
+                imageUrl: 'https://www.dairyfoods.com/ext/resources/DF/2020/August/df-100/GettyImages-1194287257.jpg?1597726305',
+                id: 3,
+                size:''
+            }, {
+                title: 'MEDICINES',
+                imageUrl: 'https://news.leavitt.com/wp-content/uploads/2017/12/Prescription-Drugs.jpg',
+                id: 4,
+                size:''
+            }, {
+                title: 'KIRANA ITEMS',
+                imageUrl: 'https://image.cnbcfm.com/api/v1/image/106670017-1597848775766-GettyImages-1218500852.jpg?v=1597848960&w=740&h=416',
+                id: 5,
+                size: 'large'
+            }]
+        };
+    
+    }
+    
+    render() {
+        
+        return (
+            <div className = 'directory-menu'>
+                {this.state.sections.map(({ title, id, imageUrl,size }) => {
+                    return <MenuItem key={id} title={title} imageUrl={imageUrl} size={ size} />
+                })}
+            </div>
+        );
+    }
+    
+}
+
+export default Directory;
