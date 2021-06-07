@@ -4,12 +4,10 @@
   justify-content: space-between;
   margin-top: 20px;
   height: 70px;
-  width:100%;
+  width: 100%;
 
   .logo {
-    
     height: 100%;
-    padding: 25px;
   }
 
   .optionbar {
@@ -21,8 +19,8 @@
 
     .option {
       padding: 10px 15px;
-      &:hover{
-          cursor:pointer;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
