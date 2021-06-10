@@ -7,7 +7,11 @@
   width: 100%;
 
   .logo {
+    display: block;
     height: 100%;
+    width: 100%;
+    background-color: floralwhite;
+    border-radius: 15%;
   }
 
   .optionbar {
@@ -15,12 +19,22 @@
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 
     .option {
       padding: 10px 15px;
+      background-color: white;
+      color: darkred;
+      font-weight: bolder;
+      text-decoration:none;
+
       &:hover {
         cursor: pointer;
+        background-color: indianred;
+        color: white;
+        border-radius: 50%;
+        transform: scale(1.5);
+        transition: transform 0.7s cubic-bezier(0.65, 0.13, 0.45, 1.23);
       }
     }
   }

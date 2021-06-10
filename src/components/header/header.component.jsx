@@ -1,27 +1,34 @@
 import React from 'react';
-import {Link,withRouter} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './header.styles.scss';
 import { ReactComponent as Logo } from './../assets/icons8-scroll.svg'
 import { auth} from '../../firebase/firebase.util'
-const Header = ({ history,currentUser}) => (
+const Header = ({ currentUser}) => (
 
     <div className='header' >
         <Link to='/'>
         <Logo className='logo'/>
         </Link>
         <div className='optionbar'>
-            <span className='option' onClick={() => history.push(`/shop`)}> SHOP</span>
-            <span className='option'> CONTACT</span>
+            <Link to='/shop' className='option' > SHOP </Link>
+            <Link to='/contact' className='option'> CONTACT</Link>
             {
                 currentUser ?
                 <span className='option' onClick={ () => auth.signOut()}>SIGN OUT</span>
-                : <span className='option' onClick={() => history.push(`/signinandsignup`)}> SIGN IN</span>
+                : <Link className='option' to='/signinandsignup'> SIGN IN</Link>
             }
         </div>
         
     </div>
 );
 
+const mapStateToProps = (state) => (
+    {
+        currentUser: state.user.currentUser
+    }
+);
 
-export default withRouter(Header);
+
+export default connect (mapStateToProps)(Header);
 
