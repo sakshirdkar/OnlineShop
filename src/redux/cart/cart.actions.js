@@ -1,10 +1,10 @@
 
 import {CartActionTypes} from './cart.types';
 
-export const setItemCount = () => {
+export const addItem = (item) => {
     return {
-        type: CartActionTypes.SET_ITEM_COUNT,
-        
+        type: CartActionTypes.ADD_ITEM,
+        payload:item
     };
 };
 

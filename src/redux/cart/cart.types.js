@@ -1,4 +1,4 @@
 export const CartActionTypes = {
-    SET_ITEM_COUNT: 'SET_ITEM_COUNT',
+    ADD_ITEM: 'ADD_ITEM',
     TOGGLE_CART_HIDDEN:'TOGGLE_CART_HIDDEN'
 }
