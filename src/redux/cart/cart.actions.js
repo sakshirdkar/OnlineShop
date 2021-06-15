@@ -14,3 +14,10 @@ export const toggleCartHidden = () => {
      
     };
 };
+
+export const clearItemFromCart = (item) => {
+    return {
+        type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+        payload: item,
+    };
+};
