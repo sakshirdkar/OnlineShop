@@ -35,7 +35,7 @@ const CheckoutPage = ({ cartItems, totalPrice}) => (
         }
         
         
-        <div className='total-price'>Rs. { totalPrice}</div>
+        <div className='total-price'>TOTAL - Rs. { totalPrice}</div>
     
 </div>
 );

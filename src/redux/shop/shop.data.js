@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-                {
+const SHOP_DATA = {
+               vegetables: {
                     id: 1,
                     title: 'Vegetables',
                     routeName: 'vegetables',
@@ -22,7 +22,8 @@ const SHOP_DATA = [
                         price: 25 
                     }]
                 
-                },{
+    },
+                fruits: {
                     id: 2,
                     title: 'Fruits',
                     routeName: 'fruits',
@@ -45,7 +46,8 @@ const SHOP_DATA = [
                         price: 25 
                     }]
                 
-                }, {
+    }, 
+         dairyproducts: {
                     id: 3,
                     title: 'Dairy Products',
                     routeName: 'dairyproducts',
@@ -67,7 +69,8 @@ const SHOP_DATA = [
                         imageUrl: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/how-to-make-curd.jpg',
                         price: 25 
                     }]
-                },{
+    },
+                medicines: {
                     id: 4,
                     title: 'Medicines',
                     routeName: 'medicines',
@@ -89,31 +92,30 @@ const SHOP_DATA = [
                         imageUrl: 'https://images.jdmagicbox.com/quickquotes/images_main/b07b2zspfj_moov_ointment_50_g_with_moov_spray_80_g_and_moov_ortho_knee_and_joints_pain_relief_cream_50_g_99419757_1.jpg',
                         price: 25 
                     }]
-                }, {
-                    id: 5,
-                    title: 'Kirana Items',
-                    routeName: 'kiranaitems',
-                    items: [{
-                        id: 13,
-                        name: 'Rice',
-                        imageUrl: 'https://img.etimg.com/thumb/width-640,height-480,imgsize-208589,resizemode-1,msid-78492741/news/economy/agriculture/non-basmati-rice-exports-from-india-increases-68-yoy-in-april-july-period/basmati-rice-agencies.jpg',
-                        price: 25 
-                    },
-                    {
-                        id: 14,
-                        name: 'Pulses',
-                        imageUrl: 'https://images.herzindagi.info/image/2020/Jul/astrology-pulses.jpg',
-                        price: 25 
-                        },
-                    {
-                        id: 15,
-                        name: 'Flour',
-                        imageUrl: 'https://cdn.shopify.com/s/files/1/0292/9423/1687/products/IMG_20200830_162502_390x.jpg?v=1598784965',
-                        price: 25 
-                    }]
+    },
+kiranaitems:  {
+    id: 5,
+        title: 'Kirana Items',
+            routeName: 'kiranaitems',
+                items: [{
+                    id: 13,
+                    name: 'Rice',
+                    imageUrl: 'https://img.etimg.com/thumb/width-640,height-480,imgsize-208589,resizemode-1,msid-78492741/news/economy/agriculture/non-basmati-rice-exports-from-india-increases-68-yoy-in-april-july-period/basmati-rice-agencies.jpg',
+                    price: 25
+                },
+                {
+                    id: 14,
+                    name: 'Pulses',
+                    imageUrl: 'https://images.herzindagi.info/image/2020/Jul/astrology-pulses.jpg',
+                    price: 25
+                },
+                {
+                    id: 15,
+                    name: 'Flour',
+                    imageUrl: 'https://cdn.shopify.com/s/files/1/0292/9423/1687/products/IMG_20200830_162502_390x.jpg?v=1598784965',
+                    price: 25
+                }]
                 }
-
-
-];
+  };
 
 export default SHOP_DATA;

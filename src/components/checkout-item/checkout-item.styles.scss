@@ -17,6 +17,7 @@
     font-size: 20px;
     width: 23%;
     padding: 0px 10px 4px;
+    
   }
   .price {
     font-size: 20px;
@@ -27,6 +28,19 @@
     font-size: 20px;
     width: 23%;
     padding: 0px 10px 4px;
+    display:flex;
+    .arrow{
+      &:hover{
+       
+        cursor:pointer;
+      }
+      &:active{
+         color:springgreen;
+      }
+    }
+    .value{
+       margin: 0 4px 0;
+    }
   }
   .remove-icon {
     width: 8%;

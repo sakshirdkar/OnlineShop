@@ -21,4 +21,16 @@ export const addItemsToCart = (cartItems, newItem) => {
     } 
 }
 
-export const clearItem = (cartItems, item) =>  cartItems.filter((cartItem) => cartItem.id !== item.id )
+export const clearItem = (cartItems, item) => cartItems.filter((cartItem) => cartItem.id !== item.id)
+
+
+export const removeItemFromCart = (cartItems, item) => {
+    if (item.quantity > 1)
+        return cartItems.map((cartItem) => {
+            if (cartItem.id === item.id)
+                return { ...cartItem, quantity: cartItem.quantity - 1 }
+            return cartItem;
+        });
+    else
+        return cartItems.filter((cartItem) => cartItem.id !== item.id);
+}
