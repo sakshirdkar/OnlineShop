@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/OnlineShop/static/css/main.b4a23b8a.chunk.css",
+    "main.js": "/OnlineShop/static/js/main.be0be3de.chunk.js",
+    "main.js.map": "/OnlineShop/static/js/main.be0be3de.chunk.js.map",
+    "runtime-main.js": "/OnlineShop/static/js/runtime-main.5c563e9c.js",
+    "runtime-main.js.map": "/OnlineShop/static/js/runtime-main.5c563e9c.js.map",
+    "static/js/2.208a911e.chunk.js": "/OnlineShop/static/js/2.208a911e.chunk.js",
+    "static/js/2.208a911e.chunk.js.map": "/OnlineShop/static/js/2.208a911e.chunk.js.map",
+    "static/js/3.2e13732b.chunk.js": "/OnlineShop/static/js/3.2e13732b.chunk.js",
+    "static/js/3.2e13732b.chunk.js.map": "/OnlineShop/static/js/3.2e13732b.chunk.js.map",
+    "index.html": "/OnlineShop/index.html",
+    "static/css/main.b4a23b8a.chunk.css.map": "/OnlineShop/static/css/main.b4a23b8a.chunk.css.map",
+    "static/js/2.208a911e.chunk.js.LICENSE.txt": "/OnlineShop/static/js/2.208a911e.chunk.js.LICENSE.txt",
+    "static/media/cart.a688874f.svg": "/OnlineShop/static/media/cart.a688874f.svg",
+    "static/media/icons8-scroll.4e590d94.svg": "/OnlineShop/static/media/icons8-scroll.4e590d94.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c563e9c.js",
+    "static/js/2.208a911e.chunk.js",
+    "static/css/main.b4a23b8a.chunk.css",
+    "static/js/main.be0be3de.chunk.js"
+  ]
+}
