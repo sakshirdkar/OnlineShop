@@ -22,7 +22,7 @@ const Header = ({ currentUser, hidden}) => (
             <Link to='/shop' className='option' > SHOP </Link>
             <Link to='/contact' className='option'> CONTACT</Link>
             {
-                (currentUser)  ?
+                console.log(currentUser)  ?
                 <span className='option' onClick={ () => auth.signOut()  }>SIGN OUT</span>
                 : <Link className='option' to='/signinandsignup'> SIGN IN</Link>
             }

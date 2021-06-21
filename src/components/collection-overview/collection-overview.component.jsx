@@ -7,6 +7,7 @@ import './collection.overview.styles.scss';
 
 const CollectionOverview = ({ collections }) => (
     <div className='collection-overview'>
+        <span>SHOP ALL ITEMS</span>
         {collections.map(({ id, ...othercollectionItems }) => {
             return <PreviewCollection key={id} {...othercollectionItems} />
         })}

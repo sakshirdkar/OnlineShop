@@ -4,7 +4,7 @@
   min-height:90vh;
   display:flex;
   flex-direction:column;
-  margin: 60px auto 0;
+  margin: 60px auto 50px;
   align-items: center;
   
   .empty-cart{
@@ -22,11 +22,11 @@
     
     justify-content:space-between;
     border-bottom:1px solid black;
-    align-items:center;
+    
     
 
     .title {
-
+        
         text-transform: uppercase;
         width:23%;
         &:last-child{
@@ -52,5 +52,10 @@
       align-self: flex-end;
 
   }
-
+.test-warning{
+  align-self:center;
+  margin: auto 1px;
+  color:red;
+  
+}
 }
